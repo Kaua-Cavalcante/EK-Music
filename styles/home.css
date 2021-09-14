@@ -1,0 +1,328 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+
+    top: 0;
+    width: 100vw;
+    height:5.5rem;
+
+    z-index: 100;
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.5);
+    background-color: var(--gray);
+}
+
+header .logo__container {
+    margin-left: 6rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--mostarda);
+}
+
+header .menu {
+    margin-right: 6rem;
+}
+
+header .menu .menu__link {
+    padding: 5px;
+    margin: 1.5rem;
+
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: 400;
+
+    transition: 0.3s;
+}
+
+header .menu .menu__link:hover {
+    color: var(--mostarda);
+}
+
+header .menu .about::before {
+    content: '\f007';
+    font-family: 'Font Awesome 5 Free';
+    font-size: 20px;
+    color: var(--mostarda);
+    padding: 6px;
+}
+
+header .menu .courses::before {
+    content: '\f02d';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--mostarda);
+    padding: 6px;
+}
+
+header .menu .contact::before {
+    content: '\f199';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--mostarda);
+    padding: 6px;
+}
+
+.section__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 5rem;
+    height: 100vh;
+    background-image: url("../assets/EK-Background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.section__main .font-big {
+    font-size: 6rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    line-height: 5rem;
+    color: var(--mostarda);
+}
+
+.section__main .font-big::first-line {
+    font-size: 3rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+    color: rgb(255, 255, 255);
+}
+
+.section__main .btn__whatsapp {
+    margin-top: 2.5rem;
+    padding: 1.3rem 2.3rem;
+
+    font-size: 1.1rem;
+    font-weight: 600;
+
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border: 3px solid #fff;
+    background-color: transparent;
+
+    transition: 0.5s;
+}
+
+.section__main .btn__whatsapp:hover {
+    border-color: var(--mostarda);
+    background-color: var(--mostarda);
+    text-shadow: none;
+    cursor: pointer;
+}
+
+.section__about .about__title {
+    margin: 2.5rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--gray);
+    text-transform: uppercase;
+}
+
+.section__about .about__title:after {
+    content: '';
+    margin: -3px auto;
+    background-color: var(--mostarda);
+    display: block;
+    width: 5.5em;
+    height: 3px;
+}
+
+.about__text {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    height: 40vh;
+}
+
+.about__text p {
+    width: 35%;
+    margin-right: 6rem;
+    text-align: right;
+}
+
+.section__courses .courses__title {
+    margin: 2.5rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--gray);
+    text-transform: uppercase;
+}
+
+.section__courses .courses__title::after {
+    content: '';
+    margin: -3px auto;
+    background-color: var(--mostarda);
+    display: block;
+    width: 3.5em;
+    height: 3px;
+}
+
+.section__courses .courses__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.section__courses .courses__container .card {
+    width: 35%;
+    margin: 25px;
+}
+
+.card .title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--light-gray);
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.card .description {
+    font-size: 0.95rem;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+
+img {
+    border-radius: 3px;
+    height: 15rem;
+}
+
+.section__contact {
+    margin-top: 2rem;
+    height: 85vh;
+    background-color: var(--gray);
+}
+
+.section__contact .contact__title {
+    padding: 2.5rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.section__contact .contact__title::after {
+    content: '';
+    margin: -3px auto;
+    background-color: var(--mostarda);
+    display: block;
+    width: 3.5em;
+    height: 3px;
+}
+
+.section__contact .contact__container {
+    margin-left: 6rem;
+}
+
+.contact__container .way-to-contact {
+    margin-top: 2rem;
+}
+
+.contact__subtitle {
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.email::before {
+    content: '\f0e0';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--mostarda);
+    margin-right: 10px;
+}
+
+.phone::before {
+    content: '\f879';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--mostarda);
+    margin-right: 10px;
+}
+
+.whatsapp::before {
+    content: '\f232';
+    font-family: 'Font Awesome 5 Brands';
+    font-size: 25px;
+    color: var(--mostarda);
+    margin-right: 10px;
+}
+
+.instagram::before {
+    content: '\f16d';
+    font-family: 'Font Awesome 5 Brands';
+    font-weight: 500;
+    font-size: 25px;
+    color: var(--mostarda);
+    margin-right: 10px;
+}
+
+.contact__link {
+    font-weight: 600;
+    color: var(--mostarda);
+    transition: 0.3s;
+}
+
+.contact__link:hover {
+    color: var(--orange);
+}
+
+footer {
+    background-color: var(--light-gray);
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 6rem 0 6rem;
+}
+
+.footer__container p {
+    font-size: 14px;
+    font-weight: 300;
+    padding: 8px;
+    color: var(--white);
+}
+
+.footer__container .github-link span {
+    font-weight: 300;
+    color: var(--white);
+}
+
+
+.footer__container .github-link a {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--mostarda);
+    transition: 0.3s;
+}
+
+.footer__container .github-link a:hover {
+    color: var(--orange)
+}
+
+/* animações */
+
+.animation {
+    opacity: 0;
+    transform: translate3d(-100px, 0, 0);
+    transition: .3s;
+}
+
+.start-animation {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+
+}
