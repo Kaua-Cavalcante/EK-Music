@@ -133,6 +133,18 @@ header .menu .contact::before {
     height: 3px;
 }
 
+.section__about .about__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    min-height: 50vh;
+}
+
+.about__content img {
+    margin-left: 10.7rem;
+}
+
 .about__text {
     display: flex;
     justify-content: flex-end;
@@ -141,8 +153,8 @@ header .menu .contact::before {
 }
 
 .about__text p {
-    width: 35%;
-    margin-right: 6rem;
+    width: 55%;
+    margin-right: 10.7rem;
     text-align: right;
 }
 
