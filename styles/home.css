@@ -338,3 +338,128 @@ footer {
     transform: translate3d(0, 0, 0);
 
 }
+
+/* media queries */
+
+@media(max-width: 768px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+@media(max-width: 660px) {
+    html {
+        font-size: 79%;
+    }
+
+    .section__about .about__content {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about__content img {
+        margin: 0;
+        height: 12rem;
+    }
+
+    .about__text {
+        justify-content: center;
+        height: auto;
+    }
+
+    .about__text p{
+        margin-right: 0;
+        margin-top: 1.5rem;
+        text-align: center;
+    }
+
+    .card img {
+        height: 12rem;
+    }
+}
+
+@media(max-width: 630px) {
+    header .menu {
+        display: none;
+    }
+
+    .one,
+    .two,
+    .three {
+        background-color: var(--orange);
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+
+        transition-duration: .3s;
+    }
+
+    .menu__toggle {
+        width: 40px;
+        height: 30px;
+        margin-right: 20px;
+    }
+
+    /* fullscreen */
+    .menu__section.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100vw;
+        height: 100vh;
+
+        background-color: var(--gray);
+
+        z-index: 20;
+
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+
+    .menu__section.on .menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu__section.on .menu a {
+        transition-duration: .5s;
+        font-size: 3rem;
+        line-height: 3rem;
+    }    
+
+    .menu__section.on .menu__toggle {
+        position: absolute;
+        right: 0;
+        top: 15px;
+    }
+
+    .menu__section.on .menu__toggle .one {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .menu__section.on .menu__toggle .two {
+        opacity: 0;
+    }
+
+    .menu__section.on .menu__toggle .three {
+        transform: rotate(-45deg) translate(8px, -9px);
+    }
+
+    .menu__section.on .about::before {
+        font-size: 32px;
+        padding: 15px;
+    }
+
+    .menu__section.on .courses::before {
+        font-size: 32px;
+        padding: 15px;
+    }
+
+    .menu__section.on .contact::before {
+        font-size: 32px;
+        padding: 15px;
+    }
+}
