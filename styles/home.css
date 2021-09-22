@@ -463,3 +463,9 @@ footer {
         padding: 15px;
     }
 }
+
+@media(max-width: 510px) {
+    .section__main {
+        background-size: 110% 100%;
+    }
+}
