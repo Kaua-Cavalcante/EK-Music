@@ -75,7 +75,8 @@ header .menu .contact::before {
     height: 100vh;
     background-image: url("../assets/EK-Background.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: top center;
 }
 
 .section__main .font-big {
@@ -209,7 +210,7 @@ img {
 
 .section__contact {
     margin-top: 2rem;
-    height: 85vh;
+    padding-bottom: 1.5rem;
     background-color: var(--gray);
 }
 
@@ -302,7 +303,7 @@ footer {
 }
 
 .footer__container p {
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 300;
     padding: 8px;
     color: var(--white);
@@ -315,7 +316,7 @@ footer {
 
 
 .footer__container .github-link a {
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 400;
     color: var(--mostarda);
     transition: 0.3s;
@@ -426,7 +427,7 @@ footer {
 
     .menu__section.on .menu a {
         transition-duration: .5s;
-        font-size: 3rem;
+        font-size: 2.5rem;
         line-height: 3rem;
     }    
 
@@ -449,23 +450,73 @@ footer {
     }
 
     .menu__section.on .about::before {
-        font-size: 32px;
+        font-size: 30px;
         padding: 15px;
     }
 
     .menu__section.on .courses::before {
-        font-size: 32px;
+        font-size: 30px;
         padding: 15px;
     }
 
     .menu__section.on .contact::before {
-        font-size: 32px;
+        font-size: 30px;
         padding: 15px;
     }
 }
 
 @media(max-width: 510px) {
-    .section__main {
-        background-size: 110% 100%;
+    html {
+        font-size: 75%;
+    }
+
+    header .logo__container {
+        margin-left: 4rem;
+    }
+
+    .about__text p {
+        font-size: 1.05rem;
+    }
+
+    .section__courses .courses__container {
+        flex-direction: column;
+    }
+
+    .section__courses .courses__container .card {
+        text-align: center;
+        width: 70%;
+    }
+
+    .card .description {
+        font-size: 1.05rem;
+    }
+
+    .card img {
+        height: 14rem;
+    }
+
+    .section__contact .contact__container {
+        margin-left: 4rem;
+    }
+
+    .footer__container {
+        margin: 0 3.5rem 0 3.5rem;
+    }
+
+}
+
+@media(max-width: 410px) {
+    .section__main .font-big {
+        font-size: 5rem;
+    }
+
+    .section__main .font-big::first-line {
+        font-size: 2.5rem;
+    }
+}
+
+@media(max-width: 345px) {
+    html {
+        font-size: 68%;
     }
 }
