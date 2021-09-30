@@ -1,4 +1,4 @@
-$('header .menu a').click(function(e){
+$('header .menu a, header .logo__container a').click(function(e){
     e.preventDefault();
     var id = $(this).attr('href');
         targetOffset = $(id).offset().top,
